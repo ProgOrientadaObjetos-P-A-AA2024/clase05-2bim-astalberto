@@ -42,7 +42,7 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     /*
         Los metodos provenientes de la interfaz EvaluacionTipoDos cumplen una 
     funcion parecida a las clases abstractas, solo que estas se definen en la 
-    interfaz y se implementa en la clase que se va a usar
+    interfaz y se implementa en la clase que se va a usar.
     */
     @Override
     public double obtenerPromedioEnsayo() {
