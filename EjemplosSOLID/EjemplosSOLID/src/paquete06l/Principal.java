@@ -13,13 +13,18 @@ public class Principal {
         TarjetaCredito visa1 = new TarjetaCredito();
         visa1.establecerNombre("Visa");
         visa1.establecerNumero("110011001");
+        Banco banco1 = new Banco("Loja");
+        visa1.establecerNumero("110011001");
+        visa1.establecerBanco(banco1);
         MayorEdad representante = new MayorEdad("José", visa1);
 
         MenorEdad menor = new MenorEdad("Felipe", representante);
 
-        System.out.printf("Nombre:%s - Tarjeta:%s\n",
+        System.out.printf("Nombre:%s - Tarjeta:%s - Banco: %s\n",
                 menor.obtenerNombre(),
-                menor.obtenerRepresentante().obtenerTarjeta().obtenerNumero());
+                menor.obtenerRepresentante().obtenerTarjeta().obtenerNumero(),
+                menor.obtenerRepresentante().obtenerTarjeta().obtenerBanco().obtenerNombre()
+        );
 
     }
 }
