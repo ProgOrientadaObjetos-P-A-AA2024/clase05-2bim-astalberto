@@ -33,13 +33,17 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
     }
     
     
-    @Override
+    @Override  
     public void establecerPromedioEnsayo() {
 
         promedioEnsayo = obtenerTotalProblemas() / obtenerNumeroProblemas();
 
     }
-
+    /*
+        Los metodos provenientes de la interfaz EvaluacionTipoDos cumplen una 
+    funcion parecida a las clases abstractas, solo que estas se definen en la 
+    interfaz y se implementa en la clase que se va a usar
+    */
     @Override
     public double obtenerPromedioEnsayo() {
         return promedioEnsayo;
