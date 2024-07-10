@@ -34,7 +34,7 @@ public class Principal {
         gp3.establecerUrl("http://api.movie?api=");
         System.out.println(gp3.obtenerUrl());
         System.out.println("---------------------------");
-        APIDisneyPlus api4 = new APIDisneyPlus();
+        APIDGo api4 = new APIDGo();
         api4.establecerApiKey("123456");
 
         GeneradorPeliculas gp4 = new GeneradorPeliculas();
